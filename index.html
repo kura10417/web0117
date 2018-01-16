@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dessert Planet</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.min.js">
+<link rel="Shortcut Icon" type="image/x-icon" href="img/icon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+   <script>
+     $(document).ready(function(){
+       $('.slider').bxSlider();
+     });
+
+     $(document).ready(function() {
+   $('.showmenu').on('click',  function(e){
+      e.preventDefault();
+      $('body').toggleClass('menu-show');
+  });
+});
+
+     $(document).ready(function(){
+       $('.scrollTop').click(function(){
+         var target=$(this).attr('href');
+         var targetPos=$(target).offset().top;
+         console.log(target,targetPos);
+         $('body').animate({scrollTop:targetPos},1000);
+       });
+     });
+   </script>
+</head>
+<body>
+<header>
+  <div class="nav_1">
+    <ul class="list-inline">
+      <li><a href="index.html"><img src="img/people.png" alt="" width="16px" height="16px"> 會員登入</a></li>
+      <li><a href="index.html"><img src="img/shopping.png" alt="" width="16px" height="16px"> 購物車</a></li>
+    </ul>
+</div>
+
+<div class="nav_2">
+<img src="img/logo.png" alt="LOGO" width="150px" height="150px">
+  <nav>
+    <ul class="list-inline menu_1" >
+       <li><a href="#aboutus" class="scrollTop">關於Dessert Planet</a></li>
+       <li><a href="#new_product" class="scroll">系列產品</a></li>
+       <li><a href="#new_article" class="scroll">最新文章</a></li>
+       <li><a href="#contact" class="scroll">聯絡我們</a></li>
+   </ul>
+   </nav>
+
+   <div class="hamburger_menu">
+         <ul class="menu">
+             <li><a href="#aboutus" class="scrollTop">關於Dessert Planet</a></li>
+             <li><a href="#new_product" class="scrollTop">系列產品</a></li>
+             <li><a href="#new_article" class="scrollTop">最新文章</a></li>
+             <li><a href="#contact" class="scrollTop">聯絡我們</a></li>
+             <li><a href="#">會員登入</a></li>
+             <li><a href="#">購物車</a></li>
+         </ul>
+         <a href="#" class="showmenu"><img src="img/hamburger.png" alt="" width="70px" height="70px"></a>
+       </div>
+  </div>
+</header>
+
+<article class="about" id="aboutus">
+<img src="img/deaaert1.jpg" alt="">
+<p><br>歡迎光臨甜點星球工作坊， <br>
+我們沒有華麗的裝潢，但有最美味的甜點。<br>
+希望每位客人都能夠擁有美好的下午茶時光，<br>
+喝著茶，享用我們每日精心製作的甜點，<br>
+好好放鬆、沉澱。<br><br>
+我們提供多種商品任您選擇，還有不定時推出的季節品項和優惠，<br>
+歡迎追蹤我們的Facebook粉絲專頁及Instagram。</p>
+</article>
+
+<section>
+  <div class="photo_bg">
+  <div class="photo">
+  <div class="slider">
+      <div><img src="img/header1.jpg" alt=""></div>
+      <div><img src="img/header2.jpg" alt=""></div>
+      <div><img src="img/header3.jpg" alt=""></div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<article class="product" id="new_product">
+  <div>
+    <div><img src="img/menu1.jpg" alt=""></div>
+    <div><img src="img/menu2.jpg" alt=""></div>
+    <div><img src="img/menu3.jpg" alt=""></div>
+  </div>
+</article>
+
+
+<article class="article" id="new_article">
+    <div><img src="img/xmas.jpg" alt=""></div>
+    <div><p>
+    聖誕節特別活動來囉！ <br>
+    甜點星球工作坊將在12/19-25，<br>
+    推出聖誕節限定甜點，<br>
+    而且凡購買限定甜點，<br>
+    會附贈我們精心設計的聖誕祝福小卡。<br>
+    歡迎大家來嘗鮮。<br><br>
+    <button>Read More</button>
+    </p></div>
+</article>
+
+<div class="picture">
+    <div><img src="img/dessert01-S.jpg" alt=""></div>
+    <div><img src="img/dessert02-S.jpg" alt=""></div>
+    <div><img src="img/dessert03-S.jpg" alt=""></div>
+  </div>
+  <div class="picture">
+    <div><img src="img/dessert04-S.jpg" alt=""></div>
+    <div><img src="img/dessert05-S.jpg" alt=""></div>
+    <div><img src="img/dessert06-S.jpg" alt=""></div>
+  </div>
+
+
+</div>
+<div class="my_form">
+<form action="">
+<h1>訂閱優惠訊息</h1><br>
+姓名：<input type="text" name="name" value=""><br><br>
+信箱：<input type="text" name="email" value="Email"><br><br>
+<button>送出</button>
+</form>
+</div>
+
+<div class="location">
+<div class="map_1">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3147075078114!2d121.54315591436443!3d25.023391844872055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a908a8232611%3A0xeebfb2d71a5025c7!2z5ZyL56uL5Y-w5YyX5pWZ6IKy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1515938822895" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="map_2">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.285811640427!2d121.54108431436445!3d25.02437284483274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa2eced5041b%3A0x53f899ea915ae281!2z5ZyL56uL6Ie65YyX5pWZ6IKy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1516116044230" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="traffic">
+<p>
+ <b>交通資訊 </b> <br><br>
+捷運：木柵線科技大樓站下車，往和平東路二段，<br>
+行走約2分鐘即可抵達。<br><br>
+公車：搭乘237或295，於復興南路口站下車，<br>
+行走約1分鐘即可抵達。<br><br>
+公車：搭乘15、18、52、72、211、235、278、278(區間車)、<br>
+284、284(直行)、662、663、685、和平幹線，<br>
+於國立臺北教育大學站下車即可抵達。<br>
+</p>
+</div>
+</div>
+
+<footer>
+  <div id="contact">
+<p><b>Contact Us</b><br><br>
+客服電話：02-XXXXXXX <br>
+工作坊地址：台北市XX區XX路612號 <br>
+營業時間：二~日10:00-20:00(周一公休) <br>
+Copyright © 2018 Dessert Planet甜點星球工作坊 <br>
+</p></div>
+<div class="icon">
+<a href="https://www.facebook.com/popo0326/?ref=bookmarks"><img src="img/facebook.png" alt=""  width="70px" height="70px"></a>
+<a href="https://www.instagram.com/kura10417/"><img src="img/instagram.png" alt="" width="70px" height="70px"></a>
+</div>
+</footer>
+
+</body>
+</html>
